@@ -29,8 +29,18 @@ public class UncheckedExceptionsTest {
 
     @Test(expected = BoomException.class)
     public void unchecked_exception() {
-        BoomException exception = new BoomException();
-        throw unchecked(exception);
+        throw unchecked(new BoomException());
+    }
+
+    @Test(expected = BoomException.class)
+    public void unchecked_exception_catch() {
+        try {
+            throw unchecked(new BoomException());
+        } catch (Exception e) {
+            if (e instanceof BoomException) {
+                throw e;
+            }
+        }
     }
 
     @Test(expected = BoomException.class)
