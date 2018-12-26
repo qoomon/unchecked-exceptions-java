@@ -37,6 +37,22 @@ Catch and rethrow exception from lambda function as unchecked exception, without
   }
 ```
 #### Unchecked Exception Code
+
+**or even better**
+```java
+  import static me.qoomon.UncheckedExceptions.*;
+
+  public class Example {
+      
+      void example() {
+        // get rid of code polition with try catch block
+        // and ugly exception wrapping
+        URL url = unchecked(() -> new URL("https:/www.example.org"));
+        System.out(url);
+      }
+  }
+```
+*or*
 ```java
   import static me.qoomon.UncheckedExceptions.*;
 
@@ -54,19 +70,6 @@ Catch and rethrow exception from lambda function as unchecked exception, without
       }
   }
 ```
-**or even better**
-```java
-  import static me.qoomon.UncheckedExceptions.*;
-
-  public class Example {
-      
-      void example() {
-        // get rid of code polition with try catch block
-        URL url = unchecked(() -> new URL("https:/www.example.org"));
-        System.out(url);
-      }
-  }
-```
 ### Stream
 #### Regular Code 
 ```java
@@ -78,9 +81,11 @@ Catch and rethrow exception from lambda function as unchecked exception, without
         void example() {
           Stream.of("https:/www.example.org")
             .map(url -> {
+              // code polition with try catch block
               try {
                 return new URL(url);
               } catch (MalformedURLException e) {
+                // ugly exception wrapping
                 throw new RuntimeException(e);
               }
             });
@@ -96,6 +101,8 @@ Catch and rethrow exception from lambda function as unchecked exception, without
         
         void example() {
             Stream.of("https:/www.example.org")
+                // get rid of code polition with try catch block
+                // and ugly exception wrapping
                 .map(url -> unchecked(() -> new URL(url)));
             }
     }
