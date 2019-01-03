@@ -3,6 +3,7 @@
 
 This lib can be used to throw checked exceptions without actually declaring this in your method's head `throws` clause.
 And without wrapping the exception into a `RuntimeException`
+Basically you can throw any `Exception` everywhere without catching them, happy throwing :-D
 
 ## Methods
 
