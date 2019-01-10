@@ -1,4 +1,15 @@
 # Unchecked Exception 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+[![Snyk Vulnerabilities](https://snyk.io/test/github/qoomon/unchecked-exceptions-java/badge.svg)](https://snyk.io/test/github/qoomon/unchecked-exceptions-java)
+
+[![Codacy Maintainability](https://img.shields.io/codeclimate/maintainability/qoomon/unchecked-exceptions-java.svg)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java)
+
+[![Codacy Coverage](https://img.shields.io/codeclimate/coverage/qoomon/unchecked-exceptions-java.svg)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java)
+
+[![Travis](https://img.shields.io/travis/qoomon/banking-swift-messages-java.svg)](https://travis-ci.org/qoomon/unchecked-exceptions-java)
+
 [![Maven Central](https://img.shields.io/maven-central/v/me.qoomon/unchecked-exceptions.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22me.qoomon%22%20AND%20a%3A%22unchecked-exceptions%22) [![Build Status](https://travis-ci.org/qoomon/unchecked-exceptions-java.svg?branch=master)](https://travis-ci.org/qoomon/unchecked-exceptions-java)
 
 This lib can be used to throw checked exceptions without actually declaring this in your method's head `throws` clause.
