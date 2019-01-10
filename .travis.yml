@@ -2,19 +2,19 @@ language: java
 
 jdk:
   - oraclejdk9
-  
-before_install:
-  # install jpm4j
-  # - curl -sL https://github.com/jpm4j/jpm4j.installers/raw/master/dist/biz.aQute.jpm.run.jar >jpm.jar && java -jar jpm.jar -u init && export PATH=$PATH:~/jpm/bin
-  # - jpm install com.codacy:codacy-coverage-reporter:assembly
 
 install: 
   - mvn validate -V
   
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
 script:
-  - mvn verify -V -B
+  - mvn verify -B -V
   
-after_script:
-  # - codacy-coverage-reporter -l Java -r ./target/site/jacoco/jacoco.xml --prefix ./src/main/java/
-  # - mvn coveralls:report -Dcoveralls.repoToken=$COVERALLS_REPO_TOKEN
+after_script: 
+  - JACOCO_SOURCE_PATH=src/main/java ./cc-test-reporter format-coverage -t jacoco ./target/site/jacoco/jacoco.xml
+  - ./cc-test-reporter upload-coverage
  
