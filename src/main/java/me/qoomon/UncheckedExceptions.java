@@ -1,6 +1,9 @@
 package me.qoomon;
 
-public class UncheckedExceptions {
+public final class UncheckedExceptions {
+
+    private UncheckedExceptions() {
+    }
 
     /**
      * throws {@code exception} as unchecked exception, without wrapping exception.
