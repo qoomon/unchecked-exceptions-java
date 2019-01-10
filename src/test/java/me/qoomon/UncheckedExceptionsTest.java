@@ -1,13 +1,8 @@
 package me.qoomon;
 
-import org.junit.Test;
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import static me.qoomon.UncheckedExceptions.unchecked;
+
+import org.junit.Test;
 
 public class UncheckedExceptionsTest {
 
@@ -17,48 +12,50 @@ public class UncheckedExceptionsTest {
         }
     }
 
-
-    Object boomFunction() throws BoomException {
-        throw new BoomException();
-    }
-
-    void boomMethod() throws BoomException {
-        throw new BoomException();
-    }
-
-
     @Test(expected = BoomException.class)
     public void unchecked_exception() {
         throw unchecked(new BoomException());
     }
 
+
+    private Object errorFunction() throws BoomException {
+        throw new BoomException();
+    }
+
+    private void errorMethod() throws BoomException {
+        throw new BoomException();
+    }
+
+
     @Test(expected = BoomException.class)
-    public void unchecked_exception_catch() {
-        try {
-            throw unchecked(new BoomException());
-        } catch (Exception e) {
-            if (e instanceof BoomException) {
-                throw e;
-            }
-        }
+    public void unchecked_method() {
+        unchecked(this::errorMethod);
     }
 
     @Test(expected = BoomException.class)
     public void unchecked_function() {
-        unchecked(this::boomFunction);
+        unchecked(this::errorFunction);
     }
 
-    @Test(expected = MalformedURLException.class)
-    public void unchecked_function_in_stream() throws MalformedURLException {
-        Stream.of("MalformedURL")
-                .map(url -> unchecked(() -> new URL(url)))
-                .collect(Collectors.toList());
+
+    private Object successFunction(){
+        return null;
     }
 
-    @Test(expected = BoomException.class)
-    public void unchecked_method() {
-        unchecked(this::boomMethod);
+    private void successMethod(){
     }
+
+    @Test
+    public void unchecked_function_exception() {
+        unchecked(this::successFunction);
+    }
+
+    @Test
+    public void unchecked_method_exception() {
+        unchecked(this::successMethod);
+    }
+
+
 
 }
 

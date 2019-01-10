@@ -9,10 +9,9 @@ public class UncheckedExceptions {
      * @throws T {@code exception} as unchecked exception
      */
     @SuppressWarnings("unchecked")
-    public static <T extends Throwable> T unchecked(Exception exception) throws T {
+    public static <T extends Throwable> T unchecked(final Throwable exception) throws T {
         throw (T) exception;
     }
-
 
     @FunctionalInterface
     public interface UncheckedFunction<R> {
@@ -24,9 +23,9 @@ public class UncheckedExceptions {
      * catches and rethrows checked exceptions as unchecked exceptions, without wrapping exception.
      *
      * @return result of function
-     * @see #unchecked(Exception)
+     * @see #unchecked(Throwable)
      */
-    public static <R> R unchecked(UncheckedFunction<R> function) {
+    public static <R> R unchecked(final UncheckedFunction<R> function) {
         try {
             return function.call();
         } catch (Exception e) {
@@ -34,9 +33,9 @@ public class UncheckedExceptions {
         }
     }
 
-
     @FunctionalInterface
     public interface UncheckedMethod {
+
         void call() throws Exception;
     }
 
@@ -44,14 +43,13 @@ public class UncheckedExceptions {
      * Executes given method,
      * catches and rethrows checked exceptions as unchecked exceptions, without wrapping exception.
      *
-     * @see #unchecked(Exception)
+     * @see #unchecked(Throwable)
      */
-    public static void unchecked(UncheckedMethod method) {
+    public static void unchecked(final UncheckedMethod method) {
         try {
             method.call();
         } catch (Exception e) {
             throw unchecked(e);
         }
     }
-
 }
