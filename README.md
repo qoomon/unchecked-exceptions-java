@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-[![Vulnerabilities](https://snyk.io/test/github/qoomon/unchecked-exceptions-java/badge.svg)](https://snyk.io/test/github/qoomon/unchecked-exceptions-java)
+[![Known Vulnerabilities](https://snyk.io/test/github/qoomon/unchecked-exceptions-java/badge.svg)](https://snyk.io/test/github/qoomon/unchecked-exceptions-java)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d8d4132d4737c4c34edd/maintainability)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java/maintainability)
 
