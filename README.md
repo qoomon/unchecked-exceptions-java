@@ -2,13 +2,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-[![Snyk Vulnerabilities](https://snyk.io/test/github/qoomon/unchecked-exceptions-java/badge.svg)](https://snyk.io/test/github/qoomon/unchecked-exceptions-java)
+[![Vulnerabilities](https://snyk.io/test/github/qoomon/unchecked-exceptions-java/badge.svg)](https://snyk.io/test/github/qoomon/unchecked-exceptions-java)
 
-[![Codacy Maintainability](https://img.shields.io/codeclimate/maintainability/qoomon/unchecked-exceptions-java.svg)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d8d4132d4737c4c34edd/maintainability)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java/maintainability)
 
-[![Codacy Coverage](https://img.shields.io/codeclimate/coverage/qoomon/unchecked-exceptions-java.svg)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d8d4132d4737c4c34edd/test_coverage)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java/test_coverage)
 
-[![Travis](https://img.shields.io/travis/com/qoomon/unchecked-exceptions-java.svg)](https://travis-ci.com/qoomon/unchecked-exceptions-java)
+[![Build Status](https://travis-ci.com/qoomon/unchecked-exceptions-java.svg?branch=master)](https://travis-ci.com/qoomon/unchecked-exceptions-java)
 
 [![Maven Central](https://img.shields.io/maven-central/v/me.qoomon/unchecked-exceptions.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22me.qoomon%22%20AND%20a%3A%22unchecked-exceptions%22) 
 
