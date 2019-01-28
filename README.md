@@ -8,7 +8,7 @@
 
 [![Codacy Coverage](https://img.shields.io/codeclimate/coverage/qoomon/unchecked-exceptions-java.svg)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java)
 
-[![Travis](https://img.shields.io/travis/qoomon/unchecked-exceptions-java.svg)](https://travis-ci.com/qoomon/unchecked-exceptions-java)
+[![Travis](https://img.shields.io/travis/com/qoomon/unchecked-exceptions-java.svg)](https://travis-ci.com/qoomon/unchecked-exceptions-java)
 
 [![Maven Central](https://img.shields.io/maven-central/v/me.qoomon/unchecked-exceptions.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22me.qoomon%22%20AND%20a%3A%22unchecked-exceptions%22) 
 
