@@ -12,8 +12,10 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/me.qoomon/unchecked-exceptions.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22me.qoomon%22%20AND%20a%3A%22unchecked-exceptions%22) 
 
-This lib can be used to throw checked exceptions without actually declaring this in your method's head `throws` clause.
+This lib hase zero dependencies and can be used to throw checked exceptions without declaring this in your method's head `throws` clause.
 And without wrapping `Exception` into a `RuntimeException`. Basically you can throw any `Exception` everywhere without catching them, happy throwing :-D
+
+
 
 ## Methods
 
