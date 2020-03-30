@@ -8,11 +8,11 @@ public final class UncheckedExceptions {
     /**
      * throws {@code exception} as unchecked exception, without wrapping exception.
      *
-     * @return will never return anything, return type is set to {@code exception} only to be able to write <code>throw unchecked(exception)</code>
+     * @return will never return anything, return type is {@code RuntimeException} to be able to write code like <code>throw unchecked(exception)</code>
      * @throws T {@code exception} as unchecked exception
      */
     @SuppressWarnings("unchecked")
-    public static <T extends Throwable> T unchecked(final Throwable exception) throws T {
+    public static <T extends Throwable> RuntimeException unchecked(final Throwable exception) throws T {
         throw (T) exception;
     }
 
