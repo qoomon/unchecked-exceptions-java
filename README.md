@@ -94,8 +94,7 @@ And without wrapping `Exception` into a `RuntimeException`. Basically you can th
         
         void example() {
             Stream.of("https:/www.example.org")
-                // get rid of code polition with try catch block
-                // and ugly exception wrapping
+                // get rid of code polition with try catch block and exception wrapping
                 .map(url -> unchecked(() -> new URL(url)));
             }
     }
