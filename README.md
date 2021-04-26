@@ -57,8 +57,7 @@ And without wrapping `Exception` into a `RuntimeException`. Basically you can th
   public class Example {
       
       void example() {
-        // get rid of code polition with try catch block
-        // and ugly exception wrapping
+        // get rid of code polition with try catch block and exception wrapping
         URL url = unchecked(() -> new URL("https:/www.example.org"));
         System.out(url);
       }
