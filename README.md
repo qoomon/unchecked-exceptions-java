@@ -8,7 +8,7 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d8d4132d4737c4c34edd/test_coverage)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java/test_coverage)
 
-[![Build Status](https://travis-ci.com/qoomon/unchecked-exceptions-java.svg?branch=master)](https://travis-ci.com/qoomon/unchecked-exceptions-java)
+[![Build](https://github.com/qoomon/unchecked-exceptions-java/actions/workflows/build.yml/badge.svg)](https://github.com/qoomon/unchecked-exceptions-java/actions/workflows/build.yml)
 
 [![Maven Central](https://img.shields.io/maven-central/v/me.qoomon/unchecked-exceptions.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22me.qoomon%22%20AND%20a%3A%22unchecked-exceptions%22) 
 
