@@ -1,7 +1,5 @@
 # Unchecked Exception 
 
-[![License](https://img.shields.io/github/license/qoomon/unchecked-exceptions-java)](LICENSE.md)
-
 [![Known Vulnerabilities](https://snyk.io/test/github/qoomon/unchecked-exceptions-java/badge.svg)](https://snyk.io/test/github/qoomon/unchecked-exceptions-java)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d8d4132d4737c4c34edd/maintainability)](https://codeclimate.com/github/qoomon/unchecked-exceptions-java/maintainability)
