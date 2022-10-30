@@ -1,6 +1,6 @@
 # Unchecked Exception 
 
-[![License](https://img.shields.io/github/license/qoomon/unchecked-exceptions-java?)](LICENSE.md)
+[![License](https://img.shields.io/github/license/qoomon/unchecked-exceptions-java)](LICENSE.md)
 
 [![Known Vulnerabilities](https://snyk.io/test/github/qoomon/unchecked-exceptions-java/badge.svg)](https://snyk.io/test/github/qoomon/unchecked-exceptions-java)
 
