@@ -41,12 +41,3 @@ jobs:
     - name: Build with Maven
       run: mvn verify -B -V
     
-    - name: Upload CodeClimate Report
-      env:
-        CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-        GIT_COMMIT_SHA: ${{ env.GITHUB_SHA }}
-        GIT_BRANCH: ${{ env.GITHUB_REF_NAME }}
-        JACOCO_SOURCE_PATH: src/main/java
-      run: |
-        ./cc-test-reporter format-coverage -t jacoco ./target/site/jacoco/jacoco.xml
-        ./cc-test-reporter upload-coverage
